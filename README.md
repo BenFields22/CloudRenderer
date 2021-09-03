@@ -1,7 +1,7 @@
-### CloudRenderer
+# CloudRenderer
 Implementatioin of a simple cloud renderer in AWS.
 
-#Components
+## Components
 - Frontend
 - Scheduler
 - Renderer
