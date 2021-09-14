@@ -1,0 +1,1 @@
+Deployment configuration for EKS in AWS.

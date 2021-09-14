@@ -1,0 +1,201 @@
+.Home{
+    text-align: center;
+}
+
+.chosenColor{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height:100px;
+    width:200px;
+    border:1px black solid;
+    border-radius:2px;
+    margin-bottom:5px;
+}
+
+.TranslateButton{
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    width:225px;
+    height: 20px;
+    text-align: center;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom:20px;
+    background-color: #ff9900;
+    color:white;
+    padding:5px;
+}
+
+.TranslateButton:hover{
+    background-color: #ff9900;
+    border: 2px black solid;
+    
+}
+
+.fileNameLabel{
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.sphereColorLabel{
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.DetailsContent img{
+    width: 708px;
+    height: 400px;
+    margin-top:5px;
+    margin-bottom:20px;
+    border: 1px black solid;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.download{
+    color:black;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-right:5px;
+}
+button{
+    margin-right: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.InputText{
+    padding:5px;
+    width:220px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Sliders{
+    width: 220px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.LabelSliderRed{
+    background-color: rgb(172, 82, 82);
+    color:white;
+    font-weight: bolder;
+    width:225px;
+}
+.LabelSliderGreen{
+    background-color: rgb(65, 151, 65);
+    color:white;
+    font-weight: bolder;
+    width:225px;
+}
+.LabelSliderBlue{
+    background-color: rgb(61, 61, 179);
+    color:white;
+    font-weight: bolder;
+    width:225px;
+}
+
+.JobState{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.JobTable1{
+    text-align: center;
+    display: inline-block;
+    width:30%;
+    height:200px;
+    border-left: 1px black solid;
+    border-top:1px black solid;
+    border-bottom: 1px black solid;
+}
+.JobTable2{
+    text-align: center;
+    display: inline-block;
+    width:30%;
+    height:200px;
+    border: 1px black solid;
+}
+.JobTable3{
+    text-align: center;
+    display: inline-block;
+    width:30%;
+    height:200px;
+    border-right: 1px black solid;
+    border-top:1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.TableLabel{
+    width:100%;
+    background-color: orange;
+    border-bottom: 1px black solid;
+}
+
+.scrollable{
+    height:180px;
+    overflow-y: scroll;
+    
+}
+
+table.center {
+    position: relative;
+    margin-left:auto; 
+    margin-right:auto;
+    width:100%;
+    table-layout: fixed;
+    font-size: large;
+}
+
+
+table.center tr:hover{
+    cursor: default;
+    font-weight: bold;
+}
+
+table.center tr:nth-child(even) {
+    background-color: #dadada;
+}
+
+.DetailsShadow{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    background-color: rgba(0.3,0.3,0.3,0.3);
+    z-index: 2;
+    top:0px;
+    left:0px;
+}
+
+.DetailsShadow .DetailsContent{
+    position:relative;
+    top:10%;
+    padding-top:10px;
+    border-radius: 10px;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    width:800px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+

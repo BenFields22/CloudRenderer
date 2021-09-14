@@ -1,0 +1,1 @@
+Deployment configuration for a local Minikube environment.

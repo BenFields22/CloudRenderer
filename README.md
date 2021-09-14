@@ -1,10 +1,6 @@
-# CloudRenderer
-Implementatioin of a simple cloud renderer in AWS.
+# Potato Farm Cloud Renderer
+Implementatioin of a scalable cloud renderer in AWS.
 
-## Components
-- Frontend
-- Scheduler
-- Renderer
-- Job Tracker
-
+## System Architecture
+![Architecture](./Potato_Farm_Architecture.png)
 
