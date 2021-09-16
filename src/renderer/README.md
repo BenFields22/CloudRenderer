@@ -18,7 +18,7 @@ Once built and pushed refer to [deployments](../../app-deployment)
 ## API
 /startJob
 - POST
-- Starts a render job
+- Starts a render job. Needs the filename, sphere color, and write mode. Write modes of applicaiton are 1-local file, 2-S3, 3-Both.
 - Params
 ```json
 {
@@ -26,7 +26,7 @@ Once built and pushed refer to [deployments](../../app-deployment)
     "R":"float",
     "G":"float",
     "B":"float",
-    "W":"int"//write mode of applicaiton 1-local file, 2-S3, 3-Both
+    "W":"int"
 }
 ```
 /getStatus

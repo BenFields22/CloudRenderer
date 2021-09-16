@@ -19,14 +19,15 @@ Once built and pushed refer to [deployments](../../app-deployment)
 ## API
 /ScheduleJob
 - POST
-- Attempts to start a job otherwise places in queue.
+- Attempts to start a job otherwise places in queue. Passed the name, color, and write mode. Write modes of applicaiton are 1-local file, 2-S3, 3-Both.
 - Params
 ```json
 {
     "Name":"string",
     "r":"float",
     "g":"float",
-    "b":"float"
+    "b":"float",
+    "W":"int"
 }
 ```
 /ReportFinishedJob
