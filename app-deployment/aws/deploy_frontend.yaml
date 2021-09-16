@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tracer-frontend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tracer-frontend
+  template:
+    metadata:
+      labels:
+        app: tracer-frontend
+    spec:
+      containers:
+      - name: frontend-container
+        image: potatofields/ray-tracer:frontend12
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-endpoint
+  labels:
+    app: tracer-frontend
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: tracer-frontend
+
