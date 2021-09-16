@@ -34,7 +34,7 @@ After filling out info, pressing "Schedule Job" will pass the info to the manage
 ### Get Status
 Asks the manager to pull all the info of jobs in the system and displays them in each table.
 ### Delete Completed
-Passed the name to the manager for deletion. Accesses object directly in S3 and deletes it.
+Passes the name to the manager for deletion. Accesses object directly in S3 and deletes it.
 ### View Image
 Based on selected name the S3 object is downloaded into the page and shown to the user.
 
