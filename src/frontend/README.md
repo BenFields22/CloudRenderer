@@ -30,7 +30,7 @@ npm start
 
 # Workflows
 ### Create Job
-After filling out info, pressing "Schedule" Job will pass the info to the manager for scheduling.
+After filling out info, pressing "Schedule Job" will pass the info to the manager for scheduling.
 ### Get Status
 Asks the manager to pull all the info of jobs in the system and displays them in each table.
 ### Delete Completed
