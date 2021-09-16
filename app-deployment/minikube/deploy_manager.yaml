@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: manager-container
-        image: potatofields/ray-tracer:manager4
+        image: potatofields/ray-tracer:manager8
         env:
         - name: AWS_REGION
           valueFrom:

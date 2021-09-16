@@ -11,7 +11,10 @@ COPY go.mod ./
 COPY go.sum ./
 RUN go mod download
 COPY *.go ./
-RUN go build -o /rt rt.go vec.go color.go ray.go
+COPY ./pkg/geom/*.go ./pkg/geom/
+COPY ./pkg/trace/*.go ./pkg/trace/
+
+RUN go build -o /rt rt.go
 
 ##
 ## Deploy

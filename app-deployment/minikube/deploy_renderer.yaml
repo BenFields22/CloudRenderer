@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tracer-container
-        image: potatofields/ray-tracer:rt4
+        image: potatofields/ray-tracer:rt5
         env:
         - name: AWS_REGION
           valueFrom:

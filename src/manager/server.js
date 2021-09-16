@@ -310,8 +310,8 @@ app.post('/ScheduleJob',async (req,res)=>{
     await addToScheduledCount();
     var countInQ = await getCountOfJobDetail(1);
     var activeJobs = await getCountOfJobDetail(2);
-    countInQ = countInQ.Item.Count.N;
-    activeJobs = activeJobs.Item.Count.N;
+    countInQ = parseInt(countInQ.Item.Count.N);
+    activeJobs = parseInt(activeJobs.Item.Count.N);
     console.log("Jobs in queue ", countInQ);
     console.log("Active Jobs ", activeJobs);
     var resp;
@@ -320,7 +320,7 @@ app.post('/ScheduleJob',async (req,res)=>{
         placeJobInQ(req.body.Name,{"Name":req.body.Name,"R":req.body.r,"G":req.body.g,"B":req.body.b});
         resp = "Jobs waiting. Adding to Queue";
     }
-    else if(countInQ===0 & activeJobs>3){
+    else if(activeJobs>3){
         console.log("No jobs in Q but too many active jobs");
         console.log("Placing in Queue");
         placeJobInQ(req.body.Name,{"Name":req.body.Name,"R":req.body.r,"G":req.body.g,"B":req.body.b});

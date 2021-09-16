@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend-container
-        image: potatofields/ray-tracer:frontend11
+        image: potatofields/ray-tracer:frontend12
         ports:
         - containerPort: 80
 ---

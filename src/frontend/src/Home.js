@@ -70,9 +70,9 @@ class Home extends React.Component {
                           },
                           headers:{'Access-Control-Allow-Origin': '*'}
                         });
-      console.log(res)
+      console.log(res.data)
       this.updateStatus();
-      alert("Job Scheduled");
+      alert(res.data);
     }
 
     handleChangeR=(e,newValue)=>{
@@ -140,7 +140,7 @@ class Home extends React.Component {
     }
 
     closeOptions = ()=>{
-      this.setState({showOptions:"none"});
+      this.setState({showOptions:"none",imgFile:null});
     }
 
     deleteJob = async () => {
