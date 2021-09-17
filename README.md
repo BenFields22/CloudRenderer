@@ -1,5 +1,8 @@
 # Potato Farm Cloud Renderer
-Implementation of a scalable cloud renderer. The system consists of three independently scalable primary components as outlined below.
+Implementation of a scalable cloud renderer. The system consists of three independently scalable primary components as outlined below. 
+
+#### For an overview and demo of the system feel free to refer to the YouTube video **[Building a Cloud Renderer with Kubernetes and AWS](https://youtu.be/EC9_PL-RwtA)**. The video walks through the architecture and shows the system in action.
+
 ### [Frontend](./src/frontend/) 
 React based interface where the user can create and schedule new rendering jobs. The system is simplified in that it renders a single scene, but the user can set the color of the primary sphere. The AWS Amplify library is used to interface with Cognito(Auth) and S3(retrieved finished images).
 ### [Manager/Scheduler](./src/manager/)
